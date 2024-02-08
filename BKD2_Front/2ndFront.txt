@@ -1,0 +1,22 @@
+-> We are using axios because it is an independent library which specially made for we requests 
+    It provides additional features as compare to fetch.
+    It parse the data to be fetched, No need to convert the data to JSON because it is handled by axios.
+
+-> CORS(Cross Origin) provides safety to our application. If our server is running a domain/website or let at port 3000 and there is another 
+    application with different port number and domain which can try to get the data from our server, Which may lead to security issues
+    and cause load on server which can use a lot bandwdith of server and our site/server can be crashed. So CORS stopped the cross origin 
+    requests.
+    Origin is whose port and url is same.
+
+    Solutions:-
+    1. Backend developer can whitelist the url that will have the access of server's data.
+    2. We can use CORS library in backend to whitelist the urls or domains.
+    3. Proxy:- 
+        -> We can get request from different ports or domains so we should remove site_name when we are fetching data using axios in frontend. 
+        So we use proxy in react different;y my creating method, we created app using vite so we edit the vite.config.js file and we will 
+        write some configuration there.
+        -> Whenever we set a proxy which contains {'/requests'} and {site_name/domain}. So whenver there is a hit on {/requests},
+            proxy aoutomatically detects the request (/api) and it appends the {site_name} before the request (/api).
+        -> Also server getting the request from its origin/domain. Despite od it that our application is running on different url but we used 
+            proxy and setted the origin of server, So server thinks that the request is generated from theie origin and then server gives the 
+            data.
