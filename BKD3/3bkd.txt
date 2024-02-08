@@ -1,0 +1,10 @@
+-> To Start in Backend it is neccessary first to know what kind of data is going to stored in database which may consist different fields.
+
+-> Data Modeling is about structuring the data or how data is saving in database.
+-> There are different tools which is used in industry like ;- most used is Moon Modeler, It draws the diagram and generates the code 
+    automatically, It is compatible with mongoose.
+-> Another free tool is {eraser.io} used for data modeling.
+-> Therefore We should always concern about the data points or fileds which we take as input from user and will save in database.
+
+-> There are different data modeler tools like prisma and mongoose.
+-> We named our models as {model_name.models.js}
