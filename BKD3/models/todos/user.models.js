@@ -39,6 +39,6 @@ const userSchema = new mongoose.Schema(
 // Now we have to export the schema but there is a different way to export the schema of mogoose.
 // We export using mongoose's {model} method it takes two parameters - ("Which_model", On_Which_base) -> ("model_name", Schema_name)
 export const User = mongoose.model("User", userSchema);
-/* Whenever we named a model and when it saves in mongodb the model converts to plrual and small letters like :- "User" -> "users", It is 
+/* Whenever we named a model and when it saves in mongodb, the model converted to plrual and small letters like :- "User" -> "users", It is 
     mongodb's standerdise practice or inner working.
 */

@@ -1,0 +1,11 @@
+-> 1st we are making ecommerce data model:-
+-> To model nay data first need to think which data is indepandent and unique, it should be prior. Then we should see which data model is 
+    dependent on each other, then we should implement them. We have to give references in model of each others.
+-> We made user model, then category model then product model.
+-> In product model we have to store image of product, MongoDB is powerful enough to store image in database in {Buffer Format}.
+    - But we should not store buffer file like :- pdf, images and videos in Database because It make Database heavier. Therefore Database not
+    made to store buffer files.
+    - So basically these files stored on server on different folder and the public url of the folder used in database.
+    - Or We use third party service like :- aws, cloudnery. We store the files on these services and they gave url with respect to the file
+    and we stored that url in database.
+    - It is possible that the file or image have multiple variants therefore the type of data can be array as well.
