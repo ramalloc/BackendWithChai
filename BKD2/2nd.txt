@@ -1,7 +1,7 @@
 -- We are creating a backend and we are using the data from backend in frontend.
 
--> Javascript has two types to import a file :- synchrinous and asynchronous, require is sync and import is async.
+-> Javascript has two types to import a file :- synchronous and asynchronous, require is sync and import is async.
 -> If we use asynchronous then we got error and to resolve that error we write {"type" : "module"} in package.json
 
--> To read of messy json content we can use JSON Formatter online to see JSON in tree form.
+-> To read of messy json content we can use JSON Formatter in browser online to see JSON in tree form.
 

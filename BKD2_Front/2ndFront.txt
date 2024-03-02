@@ -13,10 +13,10 @@
     2. We can use CORS library in backend to whitelist the urls or domains.
     3. Proxy:- 
         -> We can get request from different ports or domains so we should remove site_name when we are fetching data using axios in frontend. 
-        So we use proxy in react different;y my creating method, we created app using vite so we edit the vite.config.js file and we will 
+        So we use proxy in react differently by creating method, we created app using vite so we edit the vite.config.js file and we will 
         write some configuration there.
-        -> Whenever we set a proxy which contains {'/requests'} and {site_name/domain}. So whenver there is a hit on {/requests},
-            proxy aoutomatically detects the request (/api) and it appends the {site_name} before the request (/api).
-        -> Also server getting the request from its origin/domain. Despite od it that our application is running on different url but we used 
-            proxy and setted the origin of server, So server thinks that the request is generated from theie origin and then server gives the 
-            data.
+        -> Whenever we set a proxy which contains {'/requests'} and {site_name or domain}. So whenver there is a hit on {/requests},
+            proxy aoutomatically detects the request (/:api) and it appends the {site_name} before the request (/:api).
+        -> Also server getting the request from its origin/domain. Despite of it that our application is running on different url but we used 
+            proxy and setted the origin of server, So server thinks that the request is generated from its own origin and then server gives
+            the data.

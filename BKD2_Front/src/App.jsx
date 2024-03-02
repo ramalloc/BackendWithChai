@@ -20,10 +20,10 @@ function App() {
       <h2>JOKES : {jokes.length}</h2>
 
       {
-        jokes.map((joke, index) => (
-          <div key={joke.id}>
-            <h3>{joke.title}</h3>
-            <p>{joke.content}</p>
+        jokes.map((jokeItem, index) => (
+          <div key={jokeItem.id}>
+            <h3>{jokeItem.title}</h3>
+            <p>{jokeItem.content}</p>
           </div>
         ))
       }
